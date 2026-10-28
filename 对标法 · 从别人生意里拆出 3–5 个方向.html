@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/huawei/Downloads/deepseek_html_20261026_8ec6dc.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>对标法 · 从别人生意里拆出 3–5 个方向</title>
+<style>
+:root{
+  /* 文字 */
+  --ink:#1a1f1c;
+  --ink2:#3d4540;
+  --muted:#6b7370;
+  --muted2:#9aa19d;
+  /* 线条 */
+  --line:#e3e1d9;
+  --line-soft:#eeece4;
+  /* 墨绿主色 */
+  --primary:#1f3d33;
+  --primary-2:#2d5a4a;
+  --primary-soft:#edf2ef;
+  --primary-line:#c7d3cd;
+  /* 铜金强调 */
+  --accent:#a8824c;
+  --accent-2:#bf9a62;
+  --accent-soft:#f6f0e4;
+  --accent-line:#e3d3b6;
+  /* 成功 */
+  --ok:#4a7c59;
+  --ok-soft:#eef4ef;
+  /* 背景 */
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  /* 阴影 */
+  --sh-sm:0 1px 2px rgba(26,31,28,.05);
+  --sh-md:0 1px 3px rgba(26,31,28,.05),0 16px 32px -20px rgba(26,31,28,.22);
+  --sh-lg:0 2px 10px rgba(26,31,28,.06),0 34px 64px -34px rgba(31,61,51,.42);
+  --r-lg:24px;--r-md:18px;--r-sm:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);background:var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased;font-size:15px;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(880px 600px at 10% -12%,rgba(31,61,51,.10),transparent 62%),
+    radial-gradient(760px 520px at 102% -6%,rgba(168,130,76,.10),transparent 60%),
+    radial-gradient(720px 500px at 50% 112%,rgba(31,61,51,.05),transparent 62%),
+    var(--bg);
+}
+.wrap{max-width:900px;margin:0 auto;padding:44px 22px 90px}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;overflow:hidden;color:#f4f2ec;
+  border-radius:28px;padding:44px 38px 38px;margin-bottom:46px;
+  background:
+    radial-gradient(680px 380px at 88% -10%,rgba(191,154,98,.30),transparent 62%),
+    linear-gradient(135deg,#16302a 0%,#1f3d33 46%,#2b5444 100%);
+  box-shadow:var(--sh-lg);
+}
+.hero::after{
+  content:"";position:absolute;width:420px;height:420px;right:-140px;top:-180px;border-radius:50%;
+  border:1px solid rgba(191,154,98,.28);
+}
+.hero::before{
+  content:"";position:absolute;width:280px;height:280px;left:-110px;bottom:-150px;border-radius:50%;
+  background:radial-gradient(circle,rgba(191,154,98,.16),transparent 70%);
+}
+.hero-tag{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:2px;
+  padding:5px 14px;border-radius:99px;margin-bottom:18px;
+  color:#e2c99c;background:rgba(191,154,98,.14);
+  border:1px solid rgba(191,154,98,.42);
+}
+.hero h1{margin:0 0 14px;font-size:30px;line-height:1.35;letter-spacing:.3px;font-weight:800;}
+.hero p{margin:0;font-size:14.5px;opacity:.82;max-width:600px;line-height:1.85;}
+.progress{margin-top:28px;display:flex;align-items:center;gap:14px;font-size:12.5px;font-weight:600;opacity:.95;}
+.bar{flex:1;height:6px;border-radius:99px;background:rgba(255,255,255,.16);overflow:hidden;}
+.bar i{display:block;height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#bf9a62,#e2c99c);transition:width .4s cubic-bezier(.4,0,.2,1);}
+.hero-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;}
+.hero-links a{
+  font-size:12.5px;font-weight:600;color:#f4f2ec;text-decoration:none;
+  border:1px solid rgba(244,242,236,.28);border-radius:99px;padding:6px 16px;transition:.22s;
+}
+.hero-links a:hover{background:rgba(191,154,98,.18);border-color:rgba(191,154,98,.55);color:#e2c99c;}
+
+/* ============ STEP LAYOUT ============ */
+.step{position:relative;padding-left:72px;padding-bottom:30px;}
+.step::before{
+  content:"";position:absolute;left:27px;top:62px;bottom:0;width:1px;
+  background:linear-gradient(to bottom,var(--line) 0%,var(--line-soft) 70%,transparent 100%);
+}
+.step:last-of-type::before{display:none;}
+.num{
+  position:absolute;left:0;top:0;width:56px;height:56px;border-radius:16px;z-index:1;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800;color:#f4f2ec;
+  background:linear-gradient(140deg,#1f3d33,#2d5a4a);
+  box-shadow:0 12px 24px -12px rgba(31,61,51,.9);
+  transition:.28s cubic-bezier(.4,0,.2,1);
+}
+.num.done{
+  background:linear-gradient(140deg,#8a6a3a,#bf9a62);
+  box-shadow:0 12px 24px -12px rgba(168,130,76,.9);
+  font-size:23px;
+}
+.card{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);
+  padding:28px 28px 26px;box-shadow:var(--sh-md);
+  transition:box-shadow .25s;
+}
+.card:hover{box-shadow:0 1px 3px rgba(26,31,28,.05),0 20px 40px -22px rgba(26,31,28,.26);}
+.card-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
+.card h2{margin:0;font-size:19.5px;font-weight:800;letter-spacing:.2px;color:var(--ink);}
+.card .sub{margin:0 0 4px;color:var(--muted);font-size:13.5px;}
+
+.block{margin-top:20px;}
+.tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:800;letter-spacing:1px;
+  color:var(--accent);
+  background:var(--accent-soft);
+  border:1px solid var(--accent-line);
+  padding:3px 11px;border-radius:6px;margin-bottom:10px;
+}
+.block p{margin:0;font-size:14.5px;color:var(--ink2);}
+ul.qs{margin:0;padding:0;list-style:none;}
+ul.qs li{position:relative;padding-left:19px;font-size:14.5px;color:var(--ink2);margin-bottom:6px;}
+ul.qs li::before{
+  content:"";position:absolute;left:3px;top:11px;width:5px;height:5px;border-radius:50%;
+  background:var(--accent);
+}
+.hint-line{
+  margin-top:14px;padding:12px 16px;border-radius:10px;font-size:13.5px;color:var(--ink2);
+  background:#fbfaf6;border-left:2px solid var(--accent);
+}
+
+/* ============ FIELDS ============ */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px 18px;margin-top:18px;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.field label{font-size:13.5px;font-weight:700;color:var(--ink);}
+.field .hint{font-size:11.5px;color:var(--muted2);font-weight:500;line-height:1.55;}
+.field.span2{grid-column:1/-1;}
+.req{color:#a8473a;font-weight:800;}
+
+input[data-k],textarea[data-k],input[data-opp-id],input[data-dir-id],input[data-plan]{
+  width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:var(--r-sm);
+  background:#fbfaf7;font-family:inherit;font-size:14px;color:var(--ink);line-height:1.65;
+  outline:none;transition:border-color .18s,box-shadow .18s,background .18s;
+}
+input[data-k],input[data-opp-id],input[data-dir-id],input[data-plan]{height:44px;padding:0 13px;}
+textarea[data-k]{min-height:72px;resize:vertical;}
+input:focus,textarea:focus{
+  border-color:var(--primary);
+  background:#fff;
+  box-shadow:0 0 0 3px rgba(31,61,51,.10);
+}
+::placeholder{color:#b5b9b3;font-size:13px;}
+
+/* ============ OPPORTUNITY CARDS ============ */
+.opp-card{
+  position:relative;border:1px solid var(--line-soft);border-radius:var(--r-md);
+  padding:20px 20px 18px;margin-top:16px;
+  background:#fefdfa;
+  transition:border-color .2s,box-shadow .2s;
+}
+.opp-card:hover{border-color:var(--accent-line);box-shadow:0 14px 28px -22px rgba(168,130,76,.55);}
+.opp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:2px;}
+.opp-badge{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;letter-spacing:.8px;
+  color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-line);
+  padding:3px 11px;border-radius:6px;
+}
+.mini-del{
+  font-size:12px;font-weight:600;color:var(--muted2);background:transparent;border:none;
+  cursor:pointer;padding:4px 8px;border-radius:6px;transition:.18s;font-family:inherit;
+}
+.mini-del:hover{color:#a8473a;background:#fbefed;}
+
+.add-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  margin-top:16px;padding:13px;border-radius:12px;cursor:pointer;
+  border:1px dashed var(--primary-line);background:#fbfcfa;
+  font-size:13.5px;font-weight:700;color:var(--primary);font-family:inherit;transition:.2s;
+}
+.add-btn:hover{background:var(--primary-soft);border-color:var(--primary-2);}
+.add-btn:disabled{opacity:.45;cursor:not-allowed;}
+
+/* ============ DIRECTION CARDS ============ */
+.dir-card{
+  position:relative;border:1px solid var(--line-soft);border-radius:var(--r-md);
+  padding:22px 22px 20px;margin-top:16px;background:#fff;
+  transition:border-color .2s,box-shadow .2s;
+}
+.dir-card:hover{border-color:var(--primary-line);box-shadow:0 16px 32px -24px rgba(31,61,51,.5);}
+.dir-card::before{
+  content:"";position:absolute;left:0;top:22px;bottom:22px;width:3px;border-radius:0 3px 3px 0;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2));
+}
+.dir-head{display:flex;align-items:center;gap:12px;}
+.dir-num{
+  flex:0 0 auto;width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+  font-size:13.5px;font-weight:800;color:#f4f2ec;
+  background:linear-gradient(140deg,#1f3d33,#2d5a4a);
+}
+.dir-title{font-size:15px;font-weight:800;color:var(--ink);line-height:1.4;}
+.dir-sub{font-size:12px;color:var(--muted2);margin-top:1px;}
+
+/* ============ SCORE ============ */
+.score-row{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  margin-top:18px;padding-top:16px;border-top:1px solid var(--line-soft);
+}
+.score-item{min-width:0;}
+.score-label{font-size:12.5px;font-weight:700;color:var(--ink2);margin-bottom:7px;}
+.score-label span{display:block;font-size:11px;font-weight:500;color:var(--muted2);margin-top:1px;}
+.score-bar{display:flex;gap:5px;}
+.score-bar i{
+  flex:1;height:9px;border-radius:99px;background:#e9e7df;cursor:pointer;
+  transition:background .18s,transform .12s;
+}
+.score-bar i:hover{background:#dad7cc;transform:scaleY(1.25);}
+.score-bar i.on{background:linear-gradient(90deg,#a8824c,#bf9a62);}
+.score-bar i.on:hover{transform:scaleY(1.18);}
+
+/* ============ TABLE ============ */
+.table-scroll{
+  margin-top:18px;overflow-x:auto;border:1px solid var(--line-soft);
+  border-radius:var(--r-md);background:#fff;box-shadow:var(--sh-sm);
+}
+table.cmp{width:100%;border-collapse:collapse;min-width:620px;font-size:13.5px;}
+table.cmp th,table.cmp td{padding:9px 11px;border-bottom:1px solid var(--line-soft);text-align:left;}
+table.cmp thead th{
+  background:#faf9f4;font-size:11.5px;color:var(--muted);font-weight:800;letter-spacing:.8px;
+  white-space:nowrap;text-transform:uppercase;
+}
+table.cmp tbody th{
+  width:96px;font-weight:800;color:var(--ink);background:#fbfaf6;white-space:nowrap;font-size:13px;
+}
+table.cmp tbody tr:last-child th,table.cmp tbody tr:last-child td{border-bottom:none;}
+table.cmp td{padding:6px 8px;}
+table.cmp input[data-k]{
+  width:100%;height:38px;padding:0 10px;font-size:13px;border-radius:8px;
+  border:1px solid #e8e5dc;background:#fcfbf8;
+}
+table.cmp input[data-k]:focus{border-color:var(--primary);background:#fff;box-shadow:0 0 0 3px rgba(31,61,51,.09);}
+
+/* ============ RANKING ============ */
+.rank-item{
+  display:flex;align-items:center;gap:14px;
+  padding:15px 17px;border-radius:14px;margin-bottom:10px;
+  border:1px solid var(--line-soft);background:#fff;transition:.2s;
+}
+.rank-item:hover{border-color:var(--primary-line);}
+.rank-item.top{
+  border-color:var(--accent-line);
+  background:linear-gradient(100deg,#fbf7ee 0%,#fff 62%);
+  box-shadow:0 14px 28px -22px rgba(168,130,76,.6);
+}
+.rank-pos{
+  flex:0 0 auto;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:800;color:var(--muted);background:#f2f1ea;
+}
+.rank-item.top .rank-pos{background:linear-gradient(140deg,#a8824c,#bf9a62);color:#fff;}
+.rank-body{flex:1;min-width:0;}
+.rank-name{font-size:14.5px;font-weight:800;color:var(--ink);line-height:1.4;}
+.rank-meta{font-size:12px;color:var(--muted2);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.rank-score{flex:0 0 auto;text-align:right;font-size:13px;font-weight:800;color:var(--accent);}
+.rank-score small{display:block;font-size:10.5px;font-weight:600;color:var(--muted2);}
+.pick{
+  flex:0 0 auto;font-size:12px;font-weight:700;font-family:inherit;cursor:pointer;
+  padding:7px 15px;border-radius:99px;border:1px solid var(--line);
+  background:#fff;color:var(--muted);transition:.2s;
+}
+.pick:hover{border-color:var(--primary);color:var(--primary);}
+.pick.on{
+  background:linear-gradient(140deg,#1f3d33,#2d5a4a);
+  border-color:transparent;color:#f4f2ec;
+  box-shadow:0 8px 18px -10px rgba(31,61,51,.9);
+}
+
+/* ============ SUMMARY ============ */
+.summary{
+  margin-top:50px;position:relative;overflow:hidden;
+  background:#fff;border:1px solid var(--line-soft);border-radius:28px;
+  padding:36px 34px 32px;box-shadow:var(--sh-md);
+}
+.summary::before{
+  content:"";position:absolute;inset:0 0 auto 0;height:3px;
+  background:linear-gradient(90deg,#1f3d33,#2d5a4a 45%,#bf9a62);
+}
+.summary-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px;}
+.summary h2{margin:0;font-size:21px;font-weight:800;letter-spacing:.2px;}
+.summary>.sub{margin:0;font-size:13.5px;color:var(--muted);}
+.sum-block{margin-top:24px;padding-top:18px;border-top:1px solid var(--line-soft);}
+.sum-block h3{
+  margin:0 0 12px;font-size:11px;font-weight:800;letter-spacing:1.6px;
+  color:var(--accent);text-transform:uppercase;
+}
+.sum-block p{margin:0;font-size:14.5px;line-height:1.95;color:var(--ink2);}
+.empty{color:#b8bcb6;font-style:italic;font-weight:400;}
+.loc-line{
+  padding:16px 18px;border-radius:12px;font-size:15px;line-height:2.05;color:var(--ink2);
+  background:#fbfaf5;border:1px solid var(--accent-line);
+}
+.loc-line mark{background:#fff;color:var(--primary);font-weight:800;padding:1px 7px;border-radius:5px;box-shadow:0 1px 3px rgba(31,61,51,.16);}
+.blank{color:#b5b9b3;border-bottom:1px dashed #c9cdc7;padding:0 2px;}
+.dir-out{
+  padding:13px 16px;border-radius:10px;margin-bottom:9px;
+  background:#fbfaf6;border:1px solid var(--line-soft);font-size:14px;line-height:1.8;
+}
+.dir-out.top{background:linear-gradient(100deg,#fbf7ee,#fff);border-color:var(--accent-line);}
+.dir-out b{color:var(--ink);}
+.dir-out .badge{
+  display:inline-block;font-size:10px;font-weight:800;letter-spacing:1px;color:#f4f2ec;
+  background:linear-gradient(140deg,#a8824c,#bf9a62);border-radius:5px;padding:1px 9px;margin-left:8px;
+  vertical-align:middle;
+}
+.checklist{margin:0;padding:0;list-style:none;}
+.checklist li{position:relative;padding-left:22px;font-size:14px;color:var(--ink2);margin-bottom:7px;line-height:1.8;}
+.checklist li::before{
+  content:"✓";position:absolute;left:0;top:0;color:var(--ok);font-weight:800;font-size:13px;
+}
+
+/* ============ FOOTER / ACTIONS ============ */
+.footer{
+  margin-top:32px;padding:24px 26px;border-radius:var(--r-md);
+  background:#fbfaf6;
+  border:1px solid var(--line);font-size:13.5px;color:var(--muted);line-height:1.95;
+}
+.footer strong{color:var(--ink);font-weight:800;}
+.actions{display:flex;gap:11px;margin-top:26px;flex-wrap:wrap;}
+button{
+  font-family:inherit;font-size:13.5px;font-weight:700;padding:11px 20px;
+  border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink2);
+  cursor:pointer;transition:.2s cubic-bezier(.4,0,.2,1);
+}
+button:hover{border-color:var(--primary);color:var(--primary);transform:translateY(-1px);}
+button:active{transform:translateY(0);}
+button.primary{
+  border:none;color:#f4f2ec;
+  background:linear-gradient(140deg,#1f3d33,#2d5a4a);
+  box-shadow:0 12px 24px -12px rgba(31,61,51,.9);
+}
+button.primary:hover{
+  color:#f4f2ec;
+  box-shadow:0 16px 30px -12px rgba(31,61,51,1);
+  filter:brightness(1.08);
+}
+button.ghost{color:var(--muted);background:transparent;}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:680px){
+  .wrap{padding:22px 13px 64px;}
+  .hero{padding:32px 22px 28px;border-radius:22px;}
+  .hero h1{font-size:23px;}
+  .step{padding-left:0;padding-bottom:22px;}
+  .step::before{display:none;}
+  .num{position:static;width:46px;height:46px;font-size:17px;border-radius:13px;margin-bottom:11px;}
+  .num.done{font-size:19px;}
+  .card{padding:20px 17px;border-radius:20px;}
+  .grid2,.grid3{grid-template-columns:1fr;}
+  .score-row{grid-template-columns:1fr;gap:12px;}
+  .summary{padding:26px 18px;border-radius:22px;}
+  .summary h2{font-size:18px;}
+  .rank-item{flex-wrap:wrap;gap:10px;}
+  .rank-meta{white-space:normal;}
+}
+@media print{
+  body{background:#fff;}
+  body::before{display:none;}
+  .actions,.progress,.hero-links,.add-btn,.mini-del,.pick{display:none;}
+  .card,.summary,.footer{box-shadow:none;border:1px solid #ddd;}
+  .hero{background:#1f3d33 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <span class="hero-tag">对标法 · BENCHMARKING</span>
+    <h1>从别人的生意里<br>拆出 3–5 个你能入手的方向</h1>
+    <p>不靠灵感，靠拆解。先横向拆开多个对标对象，提取机会点，再组装成多个候选方向，最后用打分排序挑一个先验证。</p>
+    <div class="progress">
+      <div class="bar"><i id="bar" style="width: 0%;"></i></div>
+      <span id="counter">已完成 0 / 7 步</span>
+    </div>
+    <div class="hero-links">
+      <a href="file:///C:/Users/huawei/Downloads/deepseek_html_20261026_8ec6dc.html#step5">跳到机会提取</a>
+      <a href="file:///C:/Users/huawei/Downloads/deepseek_html_20261026_8ec6dc.html#summary">跳到自动结论 ↓</a>
+    </div>
+  </header>
+
+  <!-- ================= 第 1 步 ================= -->
+  <section class="step">
+    <div class="num">1</div>
+    <div class="card">
+      <div class="card-head"><h2>圈定范围：在哪个“场”里找生意</h2></div>
+      <p class="sub">先别急着找对标对象，先确定你要在哪个池塘里钓鱼。</p>
+
+      <div class="block">
+        <span class="tag">🎯 怎么做</span>
+        <p>画三个圈，找交集，交集越小越好：① 我熟悉 / 有资源的　② 市场真有人掏钱的　③ 我愿意做 3 年以上的</p>
+      </div>
+
+      <div class="block">
+        <span class="tag">❓ 问自己</span>
+        <ul class="qs">
+          <li>我过去的工作 / 生活里，哪些信息是我比别人更懂的？</li>
+          <li>我身边的人最近半年为什么事付过钱？</li>
+          <li>如果 3 年不赚钱，我还能坚持做这件事吗？</li>
+        </ul>
+      </div>
+
+      <div class="grid2">
+        <div class="field">
+          <label>① 我熟悉 / 有资源的</label>
+          <span class="hint">经验、人脉、工厂、渠道、身份</span>
+          <textarea data-k="s1_familiar" placeholder="例：5 年母婴电商运营，认识 2 个工厂，手里有 3 个宝妈群"></textarea>
+        </div>
+        <div class="field">
+          <label>② 市场真有人掏钱的</label>
+          <span class="hint">有人已经为此付过钱，不是“我觉得有需求”</span>
+          <textarea data-k="s1_pay" placeholder="例：身边妈妈每年花在儿童玩具上的钱不少"></textarea>
+        </div>
+        <div class="field">
+          <label>③ 我愿意做 3 年以上的</label>
+          <span class="hint">不赚钱也愿意继续研究的领域</span>
+          <textarea data-k="s1_willing" placeholder="例：愿意长期研究儿童成长与玩教具"></textarea>
+        </div>
+        <div class="field">
+          <label>🎯 交集：锁定范围 <span class="req">*</span></label>
+          <span class="hint">一句话，范围要小到能说清“不做哪些”</span>
+          <textarea data-k="s1_scope" data-core="1" placeholder="例：母婴细分消费——3–6 岁儿童的玩教具"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 第 2 步 ================= -->
+  <section class="step">
+    <div class="num">2</div>
+    <div class="card">
+      <div class="card-head"><h2>挑对标对象：3 类样本就够</h2></div>
+      <p class="sub">不要只盯第一名，看第一名容易自卑，看不到机会。</p>
+
+      <div class="block">
+        <span class="tag">🎯 怎么做</span>
+        <p>每类挑 1–2 个，总共 3–5 个：<b>头部玩家</b>看天花板，<b>新锐黑马</b>看当下打法，<b>失败 / 退出者</b>看坑在哪。</p>
+      </div>
+
+      <div class="block">
+        <span class="tag">❓ 问自己</span>
+        <ul class="qs">
+          <li>他们卖什么给谁？大概多大体量？</li>
+          <li>他们最近一年最大的变化是什么？</li>
+          <li>那个退出的人，最后是被什么拖垮的？</li>
+        </ul>
+      </div>
+
+      <div class="grid3">
+        <div class="field">
+          <label>🟢 头部玩家 <span class="req">*</span></label>
+          <span class="hint">看这个生意的终点</span>
+          <input data-k="s2_head" data-core="1" placeholder="品牌 / 店铺名">
+        </div>
+        <div class="field">
+          <label>🟡 新锐黑马 <span class="req">*</span></label>
+          <span class="hint">近 1–2 年跑出来的</span>
+          <input data-k="s2_new" data-core="1" placeholder="品牌 / 账号名">
+        </div>
+        <div class="field">
+          <label>🔴 失败 / 退出者 <span class="req">*</span></label>
+          <span class="hint">看成本在哪爆掉</span>
+          <input data-k="s2_fail" data-core="1" placeholder="已关停的项目 / 平台">
+        </div>
+        <div class="field span2">
+          <label>为什么选它们做对标？</label>
+          <span class="hint">可写可不写，但写清楚能帮你后面判断</span>
+          <textarea data-k="s2_reason" placeholder="例：头部看规模上限；新锐看小红书打法；退出者看烧钱模型的边界"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 第 3 步 ================= -->
+  <section class="step">
+    <div class="num">3</div>
+    <div class="card">
+      <div class="card-head"><h2>建对标维度：把生意拆成 6 个格子</h2></div>
+      <p class="sub">用同一套模板拆所有人，这样才可比。每个格子写清“看什么指标”。</p>
+
+      <div class="block">
+        <span class="tag">🎯 六个格子</span>
+        <p>客群 → 痛点 → 产品与定价 → 获客渠道 → 变现方式 → 成本结构。每个格子配 1–2 个能算的数。</p>
+      </div>
+
+      <div class="block">
+        <span class="tag">❓ 问自己</span>
+        <ul class="qs">
+          <li>这些数字我能从哪拿到？（体验产品、翻评论区、看招聘信息、聊 3 个真实用户）</li>
+          <li>哪个格子我完全填不出来？——那就是我的信息盲区</li>
+        </ul>
+      </div>
+
+      <div class="grid3">
+        <div class="field">
+          <label>① 客群（谁） <span class="req">*</span></label>
+          <span class="hint">谁在买、什么身份、什么阶段</span>
+          <textarea data-k="s3_customer" data-core="1" placeholder="例：25–35 岁一二线城市妈妈"></textarea>
+        </div>
+        <div class="field">
+          <label>② 痛点（为什么买）</label>
+          <span class="hint">买之前他在纠结什么</span>
+          <textarea data-k="s3_pain" placeholder="例：怕买错、怕不安全、怕孩子玩两天就腻"></textarea>
+        </div>
+        <div class="field">
+          <label>③ 产品与定价 <span class="req">*</span></label>
+          <span class="hint">卖什么、客单价多少、复购如何</span>
+          <textarea data-k="s3_product" data-core="1" placeholder="例：玩具套装 ¥99，复购约 30%"></textarea>
+        </div>
+        <div class="field">
+          <label>④ 获客渠道 <span class="req">*</span></label>
+          <span class="hint">用户从哪来、获客成本多少</span>
+          <textarea data-k="s3_channel" data-core="1" placeholder="例：小红书种草 + 私域社群，CAC 约 ¥45"></textarea>
+        </div>
+        <div class="field">
+          <label>⑤ 变现方式</label>
+          <span class="hint">一次卖货？订阅？服务费？</span>
+          <textarea data-k="s3_money" placeholder="例：卖货为主，少量会员费"></textarea>
+        </div>
+        <div class="field">
+          <label>⑥ 成本结构</label>
+          <span class="hint">钱主要花在哪、毛利多少</span>
+          <textarea data-k="s3_cost" placeholder="例：货品 35% + 物流 8% + 投放 20%，毛利约 55%"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 第 4 步 ================= -->
+  <section class="step">
+    <div class="num">4</div>
+    <div class="card">
+      <div class="card-head"><h2>逐项对比：做一张对标表</h2></div>
+      <p class="sub">每格只填“事实 + 数字”，不填感受。每行至少填一格即可。</p>
+
+      <div class="block">
+        <span class="tag">🎯 三色标记</span>
+        <p>🟢 他们做得最好的 → <b>行业门槛</b>；🟡 大家都差不多 → <b>行业规律</b>；🔴 大家都缺的 → <b>你的机会</b></p>
+      </div>
+
+      <div class="table-scroll">
+        <table class="cmp">
+          <thead>
+            <tr>
+              <th>维度</th>
+              <th>头部玩家</th>
+              <th>新锐黑马</th>
+              <th>我的预估</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>① 客群</th>
+              <td><input data-k="s4_customer_head" data-group="row_customer" placeholder="谁在买"></td>
+              <td><input data-k="s4_customer_new" data-group="row_customer" placeholder="谁在买"></td>
+              <td><input data-k="s4_customer_me" data-group="row_customer" placeholder="我盯谁"></td>
+            </tr>
+            <tr>
+              <th>② 痛点</th>
+              <td><input data-k="s4_pain_head" data-group="row_pain" placeholder="买之前纠结什么"></td>
+              <td><input data-k="s4_pain_new" data-group="row_pain" placeholder="买之前纠结什么"></td>
+              <td><input data-k="s4_pain_me" data-group="row_pain" placeholder="我能解决什么"></td>
+            </tr>
+            <tr>
+              <th>③ 产品定价</th>
+              <td><input data-k="s4_product_head" data-group="row_product" placeholder="客单价"></td>
+              <td><input data-k="s4_product_new" data-group="row_product" placeholder="客单价"></td>
+              <td><input data-k="s4_product_me" data-group="row_product" placeholder="我打算卖多少"></td>
+            </tr>
+            <tr>
+              <th>④ 获客渠道</th>
+              <td><input data-k="s4_channel_head" data-group="row_channel" placeholder="渠道 / CAC"></td>
+              <td><input data-k="s4_channel_new" data-group="row_channel" placeholder="渠道 / CAC"></td>
+              <td><input data-k="s4_channel_me" data-group="row_channel" placeholder="我能用的渠道"></td>
+            </tr>
+            <tr>
+              <th>⑤ 变现方式</th>
+              <td><input data-k="s4_money_head" data-group="row_money" placeholder="怎么收钱"></td>
+              <td><input data-k="s4_money_new" data-group="row_money" placeholder="怎么收钱"></td>
+              <td><input data-k="s4_money_me" data-group="row_money" placeholder="我打算怎么收"></td>
+            </tr>
+            <tr>
+              <th>⑥ 成本结构</th>
+              <td><input data-k="s4_cost_head" data-group="row_cost" placeholder="钱花在哪"></td>
+              <td><input data-k="s4_cost_new" data-group="row_cost" placeholder="钱花在哪"></td>
+              <td><input data-k="s4_cost_me" data-group="row_cost" placeholder="我的预估"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 第 5 步：机会提取 ================= -->
+  <section class="step" id="step5">
+    <div class="num">5</div>
+    <div class="card">
+      <div class="card-head"><h2>机会提取：至少拆出 3 个可乘之机</h2></div>
+      <p class="sub">回到第 4 步的对标表，把“缝隙”一个个揪出来。这是产出多个方向的关键一步。</p>
+
+      <div class="block">
+        <span class="tag">🎯 从哪找</span>
+        <p>
+          🔴 <b>大家都缺的</b>——被将就的用户、被忽略的环节<br>
+          🟡 <b>大家都一样的</b>——同质化最严重的地方，往往能用不同做法切入<br>
+          🟢 <b>你有而他们没有的</b>——你的经验、关系、身份、地域、内容能力
+        </p>
+      </div>
+
+      <div class="hint-line">
+        <b>重要：</b>一个机会点只描述“一个缝隙”，不要贪心写大而全。建议提取 4–5 个，后面第 6 步会自动为每个机会点生成一张方向卡。
+      </div>
+
+      <div id="oppsBox"><div class="opp-card"><div class="opp-head"><span class="opp-badge">机会 1</span><button type="button" class="mini-del" data-del-opp="11">删除</button></div><div class="grid2"><div class="field span2"><label>这个方向一句话是什么</label><span class="hint">一句话说清“谁 + 什么缝隙”，不要写大而全</span><input data-opp-id="11" data-field="name" value="" placeholder="例：3–6 岁适龄玩具的社群实测选品"></div><div class="field"><label>来自哪个对标 + 哪个维度</label><span class="hint">方便回查，别写“凭感觉”</span><input data-opp-id="11" data-field="source" value="" placeholder="例：头部品牌 — 客群维度"></div><div class="field"><label>被将就的用户 / 被忽略的环节</label><span class="hint">这个缝隙具体是什么</span><input data-opp-id="11" data-field="gap" value="" placeholder="例：3–6 岁妈妈没人认真服务"></div><div class="field span2"><label>我凭什么能做（我的独特优势）</label><span class="hint">别人花钱也买不到的那个点</span><input data-opp-id="11" data-field="edge" value="" placeholder="例：自己是群主，能直接对话 800 位妈妈"></div></div></div><div class="opp-card"><div class="opp-head"><span class="opp-badge">机会 2</span><button type="button" class="mini-del" data-del-opp="12">删除</button></div><div class="grid2"><div class="field span2"><label>这个方向一句话是什么</label><span class="hint">一句话说清“谁 + 什么缝隙”，不要写大而全</span><input data-opp-id="12" data-field="name" value="" placeholder="例：3–6 岁适龄玩具的社群实测选品"></div><div class="field"><label>来自哪个对标 + 哪个维度</label><span class="hint">方便回查，别写“凭感觉”</span><input data-opp-id="12" data-field="source" value="" placeholder="例：头部品牌 — 客群维度"></div><div class="field"><label>被将就的用户 / 被忽略的环节</label><span class="hint">这个缝隙具体是什么</span><input data-opp-id="12" data-field="gap" value="" placeholder="例：3–6 岁妈妈没人认真服务"></div><div class="field span2"><label>我凭什么能做（我的独特优势）</label><span class="hint">别人花钱也买不到的那个点</span><input data-opp-id="12" data-field="edge" value="" placeholder="例：自己是群主，能直接对话 800 位妈妈"></div></div></div><div class="opp-card"><div class="opp-head"><span class="opp-badge">机会 3</span><button type="button" class="mini-del" data-del-opp="13">删除</button></div><div class="grid2"><div class="field span2"><label>这个方向一句话是什么</label><span class="hint">一句话说清“谁 + 什么缝隙”，不要写大而全</span><input data-opp-id="13" data-field="name" value="" placeholder="例：3–6 岁适龄玩具的社群实测选品"></div><div class="field"><label>来自哪个对标 + 哪个维度</label><span class="hint">方便回查，别写“凭感觉”</span><input data-opp-id="13" data-field="source" value="" placeholder="例：头部品牌 — 客群维度"></div><div class="field"><label>被将就的用户 / 被忽略的环节</label><span class="hint">这个缝隙具体是什么</span><input data-opp-id="13" data-field="gap" value="" placeholder="例：3–6 岁妈妈没人认真服务"></div><div class="field span2"><label>我凭什么能做（我的独特优势）</label><span class="hint">别人花钱也买不到的那个点</span><input data-opp-id="13" data-field="edge" value="" placeholder="例：自己是群主，能直接对话 800 位妈妈"></div></div></div></div>
+      <button class="add-btn" id="addOpp">＋ 再加一个机会点</button>
+    </div>
+  </section>
+
+  <!-- ================= 第 6 步：方向组装 ================= -->
+  <section class="step">
+    <div class="num">6</div>
+    <div class="card">
+      <div class="card-head"><h2>方向组装：把机会点变成一个生意</h2></div>
+      <p class="sub">上面每个机会点，自动展开成一张方向卡。给每个方向填一句话定位，并打三项分。</p>
+
+      <div class="block">
+        <span class="tag">🎯 打分规则</span>
+        <p>
+          <b>可行性</b>：我能不能做到（资源 / 能力）｜
+          <b>匹配度</b>：跟我长期意愿契不契合｜
+          <b>需求热度</b>：真的有人愿意掏钱吗<br>
+          每项 1–5 分，三项相加满分 15。分数不是精确测量，只是帮你把模糊的直觉显性化。
+        </p>
+      </div>
+
+      <div id="dirsBox"><div class="dir-card"><div class="dir-head"><span class="dir-num">1</span><div><div class="dir-title" data-dir-title="11">方向 1（待命名）</div><div class="dir-sub">先在第 5 步填「来源」</div></div></div><div class="grid2"><div class="field"><label>我帮【谁】</label><input data-dir-id="11" data-field="who" value="" placeholder="例：3–6 岁孩子的妈妈"></div><div class="field"><label>解决【什么问题】</label><input data-dir-id="11" data-field="problem" value="" placeholder="例：买不到真正适龄、不踩坑的玩具"></div><div class="field"><label>用【什么方式】</label><input data-dir-id="11" data-field="how" value="" placeholder="例：社群实测 + 小批量选品"></div><div class="field"><label>区别于【谁】</label><input data-dir-id="11" data-field="vs" value="" placeholder="例：大牌母婴店"></div><div class="field span2"><label>因为我【独特优势】</label><input data-dir-id="11" data-field="why" value="" placeholder="例：自己带娃实测，800 位妈妈实时反馈"></div></div><div class="score-row"><div class="score-item"><div class="score-label">可行性<span>我能做到吗</span></div><div class="score-bar"><i class="" data-score="11|s1|1" title="1 分"></i><i class="" data-score="11|s1|2" title="2 分"></i><i class="" data-score="11|s1|3" title="3 分"></i><i class="" data-score="11|s1|4" title="4 分"></i><i class="" data-score="11|s1|5" title="5 分"></i></div></div><div class="score-item"><div class="score-label">匹配度<span>跟我的资源 / 意愿契合吗</span></div><div class="score-bar"><i class="" data-score="11|s2|1" title="1 分"></i><i class="" data-score="11|s2|2" title="2 分"></i><i class="" data-score="11|s2|3" title="3 分"></i><i class="" data-score="11|s2|4" title="4 分"></i><i class="" data-score="11|s2|5" title="5 分"></i></div></div><div class="score-item"><div class="score-label">需求热度<span>有人愿意付钱吗</span></div><div class="score-bar"><i class="" data-score="11|s3|1" title="1 分"></i><i class="" data-score="11|s3|2" title="2 分"></i><i class="" data-score="11|s3|3" title="3 分"></i><i class="" data-score="11|s3|4" title="4 分"></i><i class="" data-score="11|s3|5" title="5 分"></i></div></div></div></div><div class="dir-card"><div class="dir-head"><span class="dir-num">2</span><div><div class="dir-title" data-dir-title="12">方向 2（待命名）</div><div class="dir-sub">先在第 5 步填「来源」</div></div></div><div class="grid2"><div class="field"><label>我帮【谁】</label><input data-dir-id="12" data-field="who" value="" placeholder="例：3–6 岁孩子的妈妈"></div><div class="field"><label>解决【什么问题】</label><input data-dir-id="12" data-field="problem" value="" placeholder="例：买不到真正适龄、不踩坑的玩具"></div><div class="field"><label>用【什么方式】</label><input data-dir-id="12" data-field="how" value="" placeholder="例：社群实测 + 小批量选品"></div><div class="field"><label>区别于【谁】</label><input data-dir-id="12" data-field="vs" value="" placeholder="例：大牌母婴店"></div><div class="field span2"><label>因为我【独特优势】</label><input data-dir-id="12" data-field="why" value="" placeholder="例：自己带娃实测，800 位妈妈实时反馈"></div></div><div class="score-row"><div class="score-item"><div class="score-label">可行性<span>我能做到吗</span></div><div class="score-bar"><i class="" data-score="12|s1|1" title="1 分"></i><i class="" data-score="12|s1|2" title="2 分"></i><i class="" data-score="12|s1|3" title="3 分"></i><i class="" data-score="12|s1|4" title="4 分"></i><i class="" data-score="12|s1|5" title="5 分"></i></div></div><div class="score-item"><div class="score-label">匹配度<span>跟我的资源 / 意愿契合吗</span></div><div class="score-bar"><i class="" data-score="12|s2|1" title="1 分"></i><i class="" data-score="12|s2|2" title="2 分"></i><i class="" data-score="12|s2|3" title="3 分"></i><i class="" data-score="12|s2|4" title="4 分"></i><i class="" data-score="12|s2|5" title="5 分"></i></div></div><div class="score-item"><div class="score-label">需求热度<span>有人愿意付钱吗</span></div><div class="score-bar"><i class="" data-score="12|s3|1" title="1 分"></i><i class="" data-score="12|s3|2" title="2 分"></i><i class="" data-score="12|s3|3" title="3 分"></i><i class="" data-score="12|s3|4" title="4 分"></i><i class="" data-score="12|s3|5" title="5 分"></i></div></div></div></div><div class="dir-card"><div class="dir-head"><span class="dir-num">3</span><div><div class="dir-title" data-dir-title="13">方向 3（待命名）</div><div class="dir-sub">先在第 5 步填「来源」</div></div></div><div class="grid2"><div class="field"><label>我帮【谁】</label><input data-dir-id="13" data-field="who" value="" placeholder="例：3–6 岁孩子的妈妈"></div><div class="field"><label>解决【什么问题】</label><input data-dir-id="13" data-field="problem" value="" placeholder="例：买不到真正适龄、不踩坑的玩具"></div><div class="field"><label>用【什么方式】</label><input data-dir-id="13" data-field="how" value="" placeholder="例：社群实测 + 小批量选品"></div><div class="field"><label>区别于【谁】</label><input data-dir-id="13" data-field="vs" value="" placeholder="例：大牌母婴店"></div><div class="field span2"><label>因为我【独特优势】</label><input data-dir-id="13" data-field="why" value="" placeholder="例：自己带娃实测，800 位妈妈实时反馈"></div></div><div class="score-row"><div class="score-item"><div class="score-label">可行性<span>我能做到吗</span></div><div class="score-bar"><i class="" data-score="13|s1|1" title="1 分"></i><i class="" data-score="13|s1|2" title="2 分"></i><i class="" data-score="13|s1|3" title="3 分"></i><i class="" data-score="13|s1|4" title="4 分"></i><i class="" data-score="13|s1|5" title="5 分"></i></div></div><div class="score-item"><div class="score-label">匹配度<span>跟我的资源 / 意愿契合吗</span></div><div class="score-bar"><i class="" data-score="13|s2|1" title="1 分"></i><i class="" data-score="13|s2|2" title="2 分"></i><i class="" data-score="13|s2|3" title="3 分"></i><i class="" data-score="13|s2|4" title="4 分"></i><i class="" data-score="13|s2|5" title="5 分"></i></div></div><div class="score-item"><div class="score-label">需求热度<span>有人愿意付钱吗</span></div><div class="score-bar"><i class="" data-score="13|s3|1" title="1 分"></i><i class="" data-score="13|s3|2" title="2 分"></i><i class="" data-score="13|s3|3" title="3 分"></i><i class="" data-score="13|s3|4" title="4 分"></i><i class="" data-score="13|s3|5" title="5 分"></i></div></div></div></div></div>
+    </div>
+  </section>
+
+  <!-- ================= 第 7 步：排序与验证 ================= -->
+  <section class="step">
+    <div class="num">7</div>
+    <div class="card">
+      <div class="card-head"><h2>排序与验证：挑一个先跑起来</h2></div>
+      <p class="sub">按综合分自动排序。不必纠结于最高分，选一个你<b>现在就能动手</b>的。</p>
+
+      <div id="rankBox" style="margin-top:18px"><div class="rank-item top"><div class="rank-pos">1</div><div class="rank-body"><div class="rank-name">方向 1</div><div class="rank-meta">尚未填写定位</div></div><div class="rank-score">0<small>/ 15</small></div><button type="button" class="pick on" data-pick="11">✓ 优先验证</button></div><div class="rank-item"><div class="rank-pos">2</div><div class="rank-body"><div class="rank-name">方向 2</div><div class="rank-meta">尚未填写定位</div></div><div class="rank-score">0<small>/ 15</small></div><button type="button" class="pick" data-pick="12">选它</button></div><div class="rank-item"><div class="rank-pos">3</div><div class="rank-body"><div class="rank-name">方向 3</div><div class="rank-meta">尚未填写定位</div></div><div class="rank-score">0<small>/ 15</small></div><button type="button" class="pick" data-pick="13">选它</button></div></div>
+
+      <div class="block" style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft)">
+        <span class="tag">🎯 最小验证计划</span>
+        <p>不注册公司、不囤货、不开发系统。用一周能做出的最粗糙版本，让 10 个真实用户用<b>钱或时间</b>投票。</p>
+
+        <div class="grid2">
+          <div class="field">
+            <label>最小验证动作 <span class="req">*</span></label>
+            <span class="hint">一周内能做完的最粗糙版本</span>
+            <input data-plan="action" placeholder="例：7 天内发 3 条玩具实测内容，挂社群入口">
+          </div>
+          <div class="field">
+            <label>验证周期</label>
+            <span class="hint">7 天 / 14 天 / 30 天</span>
+            <input data-plan="days" placeholder="例：14 天">
+          </div>
+          <div class="field">
+            <label>✅ 继续线 <span class="req">*</span></label>
+            <span class="hint">达到什么就加大投入</span>
+            <input data-plan="go" placeholder="例：3 单付费 + 20 条有效咨询">
+          </div>
+          <div class="field">
+            <label>🛑 放弃线</label>
+            <span class="hint">达到什么就回来换方向</span>
+            <input data-plan="stop" placeholder="例：14 天 0 咨询，或问的人多但没人付钱">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 自动结论 ================= -->
+  <section class="summary" id="summary">
+    <div class="summary-head">
+      <h2>📋 你的对标结论</h2>
+      <span class="sub">实时生成 · 可直接复制</span>
+    </div>
+    <p class="sub">下面会根据你的填写自动更新，包括全部候选方向和推荐优先验证的那一个。</p>
+
+    <div class="sum-block">
+      <h3>① 你拆出了几个方向</h3>
+      <p id="sum1">锁定范围：<span class="empty">还没填</span><br>共拆出 <b>3</b> 个机会点，其中 <b>0</b> 个已有雏形。</p>
+    </div>
+
+    <div class="sum-block">
+      <h3>② 全部候选方向</h3>
+      <div id="sum2"><div class="dir-out top"><b>方向 1（待命名）</b><span class="badge">优先</span><br><span style="color:#6b7370"><span class="empty">定位待填</span></span><br><span style="font-size:12px;color:#9aa19d">综合分 0 / 15</span></div><div class="dir-out"><b>方向 2（待命名）</b><br><span style="color:#6b7370"><span class="empty">定位待填</span></span><br><span style="font-size:12px;color:#9aa19d">综合分 0 / 15</span></div><div class="dir-out"><b>方向 3（待命名）</b><br><span style="color:#6b7370"><span class="empty">定位待填</span></span><br><span style="font-size:12px;color:#9aa19d">综合分 0 / 15</span></div></div>
+    </div>
+
+    <div class="sum-block">
+      <h3>③ 推荐优先验证</h3>
+      <div class="loc-line" id="sum3"><b style="color:#1a1f1c;font-size:16px">未命名方向</b><span style="font-size:12px;color:#9aa19d;margin-left:8px">综合分 0 / 15</span><br><span style="display:block;margin-top:8px"><span class="empty">定位要素还没填完</span></span></div>
+    </div>
+
+    <div class="sum-block">
+      <h3>④ 验证计划</h3>
+      <p id="sum4"><span class="empty">还没填验证计划</span></p>
+    </div>
+
+    <div class="actions" style="margin-top:24px">
+      <button class="primary" id="copy">📋 复制这份结论</button>
+    </div>
+  </section>
+
+  <div class="footer">
+    <strong>做完这 7 步，你手上应该有 3–5 个候选方向 + 一个能立刻开始的验证动作。</strong><br><br>
+    对标不是抄，而是看清行业规律（🟡），避开已知的坑（🔴 失败者），再找到他们没做好的那块空隙。
+    如果第 7 步验证没通过 → 回到第 5 步换一个机会点，或回到第 1 步换范围。<strong>这套流程本身就是循环的。</strong>
+  </div>
+
+  <div class="actions">
+    <button id="save">💾 保存到本机</button>
+    <button class="ghost" id="clear">🗑 清空全部</button>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var KEY = 'benchmark_multi_v2';
+  var uidSeq = 10;
+  var uid = function(){ return String(++uidSeq); };
+
+  /* ---------- 状态 ---------- */
+  var opps = [
+    { id: uid(), name:'', source:'', gap:'', edge:'' },
+    { id: uid(), name:'', source:'', gap:'', edge:'' },
+    { id: uid(), name:'', source:'', gap:'', edge:'' }
+  ];
+  var dirs = {};
+  var chosenId = null;
+  var plan = { action:'', days:'', go:'', stop:'' };
+
+  /* ---------- 工具 ---------- */
+  function esc(s){
+    return String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+  function getFixed(k){
+    var el = document.querySelector('[data-k="' + k + '"]');
+    return el ? el.value.trim() : '';
+  }
+  function ensureDir(id){
+    if(!dirs[id]) dirs[id] = { who:'',problem:'',how:'',vs:'',why:'',s1:0,s2:0,s3:0 };
+    return dirs[id];
+  }
+  function total(d){ return (d.s1||0) + (d.s2||0) + (d.s3||0); }
+  function filled(o){ return o.name.trim() && o.gap.trim() && o.edge.trim(); }
+
+  /* ---------- 渲染：机会卡 ---------- */
+  function renderOpportunities(){
+    var box = document.getElementById('oppsBox');
+    box.innerHTML = opps.map(function(o, i){
+      return '' +
+      '<div class="opp-card">' +
+        '<div class="opp-head">' +
+          '<span class="opp-badge">机会 ' + (i+1) + '</span>' +
+          (opps.length > 1
+            ? '<button type="button" class="mini-del" data-del-opp="' + o.id + '">删除</button>'
+            : '') +
+        '</div>' +
+        '<div class="grid2">' +
+          '<div class="field span2">' +
+            '<label>这个方向一句话是什么</label>' +
+            '<span class="hint">一句话说清“谁 + 什么缝隙”，不要写大而全</span>' +
+            '<input data-opp-id="' + o.id + '" data-field="name" value="' + esc(o.name) + '" placeholder="例：3–6 岁适龄玩具的社群实测选品">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>来自哪个对标 + 哪个维度</label>' +
+            '<span class="hint">方便回查，别写“凭感觉”</span>' +
+            '<input data-opp-id="' + o.id + '" data-field="source" value="' + esc(o.source) + '" placeholder="例：头部品牌 — 客群维度">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>被将就的用户 / 被忽略的环节</label>' +
+            '<span class="hint">这个缝隙具体是什么</span>' +
+            '<input data-opp-id="' + o.id + '" data-field="gap" value="' + esc(o.gap) + '" placeholder="例：3–6 岁妈妈没人认真服务">' +
+          '</div>' +
+          '<div class="field span2">' +
+            '<label>我凭什么能做（我的独特优势）</label>' +
+            '<span class="hint">别人花钱也买不到的那个点</span>' +
+            '<input data-opp-id="' + o.id + '" data-field="edge" value="' + esc(o.edge) + '" placeholder="例：自己是群主，能直接对话 800 位妈妈">' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+
+    var addBtn = document.getElementById('addOpp');
+    addBtn.disabled = opps.length >= 6;
+    addBtn.textContent = opps.length >= 6 ? '已达上限 6 个机会点' : '＋ 再加一个机会点';
+  }
+
+  /* ---------- 渲染：方向卡 ---------- */
+  function scoreControl(id, key, val, label, hint){
+    var bars = '';
+    for(var i = 1; i <= 5; i++){
+      bars += '<i class="' + (i <= val ? 'on' : '') + '" data-score="' + id + '|' + key + '|' + i + '" title="' + i + ' 分"></i>';
+    }
+    return '<div class="score-item">' +
+      '<div class="score-label">' + label + '<span>' + hint + '</span></div>' +
+      '<div class="score-bar">' + bars + '</div>' +
+    '</div>';
+  }
+
+  function renderDirections(){
+    var box = document.getElementById('dirsBox');
+    box.innerHTML = opps.map(function(o, i){
+      var d = ensureDir(o.id);
+      var title = o.name.trim() || ('方向 ' + (i+1) + '（待命名）');
+      var sub = o.source.trim() ? ('来自 ' + esc(o.source)) : '先在第 5 步填「来源」';
+      return '' +
+      '<div class="dir-card">' +
+        '<div class="dir-head">' +
+          '<span class="dir-num">' + (i+1) + '</span>' +
+          '<div>' +
+            '<div class="dir-title" data-dir-title="' + o.id + '">' + esc(title) + '</div>' +
+            '<div class="dir-sub">' + sub + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="grid2">' +
+          '<div class="field">' +
+            '<label>我帮【谁】</label>' +
+            '<input data-dir-id="' + o.id + '" data-field="who" value="' + esc(d.who) + '" placeholder="例：3–6 岁孩子的妈妈">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>解决【什么问题】</label>' +
+            '<input data-dir-id="' + o.id + '" data-field="problem" value="' + esc(d.problem) + '" placeholder="例：买不到真正适龄、不踩坑的玩具">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>用【什么方式】</label>' +
+            '<input data-dir-id="' + o.id + '" data-field="how" value="' + esc(d.how) + '" placeholder="例：社群实测 + 小批量选品">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>区别于【谁】</label>' +
+            '<input data-dir-id="' + o.id + '" data-field="vs" value="' + esc(d.vs) + '" placeholder="例：大牌母婴店">' +
+          '</div>' +
+          '<div class="field span2">' +
+            '<label>因为我【独特优势】</label>' +
+            '<input data-dir-id="' + o.id + '" data-field="why" value="' + esc(d.why) + '" placeholder="例：自己带娃实测，800 位妈妈实时反馈">' +
+          '</div>' +
+        '</div>' +
+        '<div class="score-row">' +
+          scoreControl(o.id, 's1', d.s1, '可行性', '我能做到吗') +
+          scoreControl(o.id, 's2', d.s2, '匹配度', '跟我的资源 / 意愿契合吗') +
+          scoreControl(o.id, 's3', d.s3, '需求热度', '有人愿意付钱吗') +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------- 渲染：排序 ---------- */
+  function renderRanking(){
+    var list = opps.map(function(o, i){
+      return { o:o, i:i, d:ensureDir(o.id), score:total(ensureDir(o.id)) };
+    });
+    list.sort(function(a, b){ return b.score - a.score; });
+
+    var best = list.length ? list[0].o.id : null;
+    var activeId = chosenId || best;
+
+    var box = document.getElementById('rankBox');
+    if(!list.length){
+      box.innerHTML = '<p class="empty">还没有方向，先回到第 5 步填写机会点。</p>';
+      return;
+    }
+
+    box.innerHTML = list.map(function(it, idx){
+      var name = it.o.name.trim() || ('方向 ' + (it.i + 1));
+      var meta = [it.d.who, it.d.problem].filter(Boolean).join(' ｜ ') || '尚未填写定位';
+      var isActive = (it.o.id === activeId);
+      return '' +
+      '<div class="rank-item' + (idx === 0 ? ' top' : '') + '">' +
+        '<div class="rank-pos">' + (idx + 1) + '</div>' +
+        '<div class="rank-body">' +
+          '<div class="rank-name">' + esc(name) + '</div>' +
+          '<div class="rank-meta">' + esc(meta) + '</div>' +
+        '</div>' +
+        '<div class="rank-score">' + it.score + '<small>/ 15</small></div>' +
+        '<button type="button" class="pick' + (isActive ? ' on' : '') + '" data-pick="' + it.o.id + '">' +
+          (isActive ? '✓ 优先验证' : '选它') +
+        '</button>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------- 渲染：结论 ---------- */
+  function renderSummary(){
+    var valid = opps.filter(function(o){ return o.name.trim() || o.gap.trim(); });
+
+    var scope = getFixed('s1_scope');
+    document.getElementById('sum1').innerHTML =
+      '锁定范围：' + (scope ? '<b>' + esc(scope) + '</b>' : '<span class="empty">还没填</span>') +
+      '<br>共拆出 <b>' + opps.length + '</b> 个机会点，其中 <b>' + valid.length + '</b> 个已有雏形。';
+
+    var list = opps.map(function(o, i){
+      var d = ensureDir(o.id);
+      return { o:o, i:i, d:d, score:total(d) };
+    }).sort(function(a, b){ return b.score - a.score; });
+
+    var bestId = list.length ? list[0].o.id : null;
+    var activeId = chosenId || bestId;
+
+    var out = '';
+    list.forEach(function(it, idx){
+      var name = it.o.name.trim() || ('方向 ' + (it.i + 1) + '（待命名）');
+      var who = it.d.who.trim();
+      var problem = it.d.problem.trim();
+      var line = [];
+      if(who) line.push('帮 ' + esc(who));
+      if(problem) line.push('解决 ' + esc(problem));
+      if(!line.length && it.o.gap.trim()) line.push(esc(it.o.gap));
+
+      out += '<div class="dir-out' + (it.o.id === activeId ? ' top' : '') + '">' +
+        '<b>' + esc(name) + '</b>' + (it.o.id === activeId ? '<span class="badge">优先</span>' : '') +
+        '<br><span style="color:#6b7370">' + (line.join('，') || '<span class="empty">定位待填</span>') + '</span>' +
+        '<br><span style="font-size:12px;color:#9aa19d">综合分 ' + it.score + ' / 15</span>' +
+      '</div>';
+    });
+    document.getElementById('sum2').innerHTML = out || '<p class="empty">还没有候选方向。</p>';
+
+    var chosen = opps.filter(function(o){ return o.id === activeId; })[0];
+    var chosenDir = chosen ? ensureDir(chosen.id) : null;
+
+    if(chosen){
+      var nm = chosen.name.trim() || '未命名方向';
+      var locParts = [];
+      if(chosenDir.who.trim()) locParts.push('帮 <mark>' + esc(chosenDir.who.trim()) + '</mark>');
+      if(chosenDir.problem.trim()) locParts.push('解决 <mark>' + esc(chosenDir.problem.trim()) + '</mark>');
+      if(chosenDir.how.trim()) locParts.push('用 <mark>' + esc(chosenDir.how.trim()) + '</mark> 的方式');
+      if(chosenDir.vs.trim()) locParts.push('区别于 <mark>' + esc(chosenDir.vs.trim()) + '</mark>');
+      if(chosenDir.why.trim()) locParts.push('因为 <mark>' + esc(chosenDir.why.trim()) + '</mark>');
+
+      var locLine = locParts.length ? locParts.join('，') + '。' : '<span class="empty">定位要素还没填完</span>';
+
+      document.getElementById('sum3').innerHTML =
+        '<b style="color:#1a1f1c;font-size:16px">' + esc(nm) + '</b>' +
+        '<span style="font-size:12px;color:#9aa19d;margin-left:8px">综合分 ' + total(chosenDir) + ' / 15</span>' +
+        '<br><span style="display:block;margin-top:8px">' + locLine + '</span>';
+    } else {
+      document.getElementById('sum3').innerHTML = '<span class="empty">还没有选定方向。</span>';
+    }
+
+    var items = [];
+    if(plan.action.trim()) items.push('行动：<b>' + esc(plan.action.trim()) + '</b>');
+    if(plan.days.trim()) items.push('周期：<b>' + esc(plan.days.trim()) + '</b>');
+    if(plan.go.trim()) items.push('继续线：<b>' + esc(plan.go.trim()) + '</b>');
+    if(plan.stop.trim()) items.push('放弃线：<b>' + esc(plan.stop.trim()) + '</b>');
+    document.getElementById('sum4').innerHTML = items.length ? items.join('<br>') : '<span class="empty">还没填验证计划</span>';
+  }
+
+  /* ---------- 进度 ---------- */
+  function updateProgress(){
+    var steps = Array.prototype.slice.call(document.querySelectorAll('.step'));
+    var done = 0;
+
+    steps.forEach(function(sec, i){
+      var ok = true;
+
+      sec.querySelectorAll('[data-core="1"]').forEach(function(el){
+        if(!el.value.trim()) ok = false;
+      });
+
+      var groups = {};
+      sec.querySelectorAll('[data-group]').forEach(function(el){
+        var g = el.getAttribute('data-group');
+        if(groups[g] === undefined) groups[g] = false;
+        if(el.value.trim()) groups[g] = true;
+      });
+      Object.keys(groups).forEach(function(g){ if(!groups[g]) ok = false; });
+
+      if(i === 4){
+        var good = opps.filter(filled).length;
+        if(good < 3) ok = false;
+      }
+      if(i === 5){
+        var g2 = opps.filter(function(o){
+          var d = ensureDir(o.id);
+          return d.who.trim() && d.problem.trim() && d.how.trim();
+        }).length;
+        if(g2 < 3) ok = false;
+      }
+      if(i === 6){
+        var hasPick = chosenId || opps.some(function(o){ return total(ensureDir(o.id)) > 0; });
+        if(!hasPick || !plan.action.trim()) ok = false;
+      }
+
+      var numEl = sec.querySelector('.num');
+      if(ok){
+        done++;
+        numEl.textContent = '✓';
+        numEl.classList.add('done');
+      } else {
+        numEl.textContent = String(i + 1);
+        numEl.classList.remove('done');
+      }
+    });
+
+    document.getElementById('bar').style.width = (done / steps.length * 100) + '%';
+    document.getElementById('counter').textContent = '已完成 ' + done + ' / ' + steps.length + ' 步';
+  }
+
+  /* ---------- 汇总刷新 ---------- */
+  function refresh(){
+    updateProgress();
+    renderRanking();
+    renderSummary();
+    persist();
+  }
+
+  /* ---------- 持久化 ---------- */
+  function persist(){
+    var fixed = {};
+    document.querySelectorAll('[data-k]').forEach(function(el){
+      if(el.value.trim()) fixed[el.getAttribute('data-k')] = el.value;
+    });
+    try{
+      localStorage.setItem(KEY, JSON.stringify({
+        opps: opps, dirs: dirs, chosenId: chosenId,
+        plan: plan, fixed: fixed, uidSeq: uidSeq
+      }));
+    }catch(e){}
+  }
+
+  function restore(){
+    try{
+      var s = JSON.parse(localStorage.getItem(KEY) || 'null');
+      if(!s) return;
+
+      if(Array.isArray(s.opps) && s.opps.length){
+        opps = s.opps.map(function(o){
+          return { id:String(o.id), name:o.name||'', source:o.source||'', gap:o.gap||'', edge:o.edge||'' };
+        });
+      }
+      if(s.dirs && typeof s.dirs === 'object') dirs = s.dirs;
+      chosenId = s.chosenId || null;
+      if(s.plan) plan = Object.assign({ action:'',days:'',go:'',stop:'' }, s.plan);
+      if(typeof s.uidSeq === 'number') uidSeq = s.uidSeq;
+
+      if(s.fixed){
+        Object.keys(s.fixed).forEach(function(k){
+          var el = document.querySelector('[data-k="' + k + '"]');
+          if(el) el.value = s.fixed[k];
+        });
+      }
+      Object.keys(plan).forEach(function(k){
+        var el = document.querySelector('[data-plan="' + k + '"]');
+        if(el) el.value = plan[k];
+      });
+    }catch(e){}
+  }
+
+  /* ---------- 事件：输入 ---------- */
+  document.addEventListener('input', function(e){
+    var t = e.target;
+    if(!(t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement)) return;
+
+    if(t.dataset.oppId !== undefined && t.dataset.field){
+      var o = opps.filter(function(x){ return x.id === t.dataset.oppId; })[0];
+      if(o){
+        o[t.dataset.field] = t.value;
+        if(t.dataset.field === 'name'){
+          var titleEl = document.querySelector('[data-dir-title="' + o.id + '"]');
+          if(titleEl) titleEl.textContent = t.value.trim() || '方向（待命名）';
+        }
+      }
+    } else if(t.dataset.dirId !== undefined && t.dataset.field){
+      ensureDir(t.dataset.dirId)[t.dataset.field] = t.value;
+    } else if(t.dataset.plan){
+      plan[t.dataset.plan] = t.value;
+    }
+
+    refresh();
+  });
+
+  /* ---------- 事件：点击 ---------- */
+  document.addEventListener('click', function(e){
+    var bar = e.target.closest('[data-score]');
+    if(bar){
+      var parts = bar.getAttribute('data-score').split('|');
+      var id = parts[0], key = parts[1], val = parseInt(parts[2], 10);
+      ensureDir(id)[key] = val;
+
+      var parent = bar.parentElement;
+      Array.prototype.forEach.call(parent.children, function(el, idx){
+        el.classList.toggle('on', idx < val);
+      });
+      refresh();
+      return;
+    }
+
+    var del = e.target.closest('[data-del-opp]');
+    if(del){
+      var delId = del.getAttribute('data-del-opp');
+      opps = opps.filter(function(o){ return o.id !== delId; });
+      delete dirs[delId];
+      if(chosenId === delId) chosenId = null;
+      renderOpportunities();
+      renderDirections();
+      refresh();
+      return;
+    }
+
+    if(e.target.closest('#addOpp')){
+      if(opps.length < 6){
+        opps.push({ id: uid(), name:'', source:'', gap:'', edge:'' });
+        renderOpportunities();
+        renderDirections();
+        refresh();
+      }
+      return;
+    }
+
+    var pick = e.target.closest('[data-pick]');
+    if(pick){
+      var pid = pick.getAttribute('data-pick');
+      chosenId = (chosenId === pid) ? null : pid;
+      refresh();
+      return;
+    }
+  });
+
+  /* ---------- 事件：按钮 ---------- */
+  document.getElementById('save').addEventListener('click', function(){
+    persist();
+    alert('已保存到本地浏览器，下次打开这个页面会自动恢复。');
+  });
+
+  document.getElementById('clear').addEventListener('click', function(){
+    if(!confirm('确定清空所有填写内容吗？此操作不可撤销。')) return;
+    localStorage.removeItem(KEY);
+
+    document.querySelectorAll('[data-k]').forEach(function(el){ el.value = ''; });
+    document.querySelectorAll('[data-plan]').forEach(function(el){ el.value = ''; });
+
+    opps = [
+      { id: uid(), name:'', source:'', gap:'', edge:'' },
+      { id: uid(), name:'', source:'', gap:'', edge:'' },
+      { id: uid(), name:'', source:'', gap:'', edge:'' }
+    ];
+    dirs = {};
+    chosenId = null;
+    plan = { action:'', days:'', go:'', stop:'' };
+
+    renderOpportunities();
+    renderDirections();
+    refresh();
+  });
+
+  /* ---------- 复制 ---------- */
+  document.getElementById('copy').addEventListener('click', function(){
+    var list = opps.map(function(o, i){
+      var d = ensureDir(o.id);
+      return { o:o, i:i, d:d, score:total(d) };
+    }).sort(function(a, b){ return b.score - a.score; });
+
+    var bestId = list.length ? list[0].o.id : null;
+    var activeId = chosenId || bestId;
+    var chosen = opps.filter(function(o){ return o.id === activeId; })[0];
+    var chosenDir = chosen ? ensureDir(chosen.id) : null;
+
+    var lines = [];
+    lines.push('【我的对标结论】');
+    lines.push('');
+    lines.push('一、范围');
+    lines.push('锁定范围：' + (getFixed('s1_scope') || '（待填）'));
+    lines.push('');
+    lines.push('二、对标对象');
+    lines.push('头部：' + (getFixed('s2_head') || '待填'));
+    lines.push('新锐：' + (getFixed('s2_new') || '待填'));
+    lines.push('退出者：' + (getFixed('s2_fail') || '待填'));
+    lines.push('');
+    lines.push('三、候选方向（共 ' + opps.length + ' 个）');
+    list.forEach(function(it, idx){
+      var nm = it.o.name.trim() || ('方向 ' + (it.i + 1) + '（待命名）');
+      var who = it.d.who.trim();
+      var pb = it.d.problem.trim();
+      var seg = [];
+      if(who) seg.push('帮 ' + who);
+      if(pb) seg.push('解决 ' + pb);
+      lines.push((idx + 1) + '. ' + nm + '（' + it.score + '/15）');
+      if(seg.length) lines.push('   ' + seg.join('，'));
+    });
+    lines.push('');
+    lines.push('四、优先验证');
+    if(chosen){
+      lines.push('方向：' + (chosen.name.trim() || '未命名方向'));
+      if(chosenDir){
+        lines.push('定位：我帮 ' + (chosenDir.who || '____') +
+          '，解决 ' + (chosenDir.problem || '____') +
+          '，用 ' + (chosenDir.how || '____') + ' 的方式' +
+          '，区别于 ' + (chosenDir.vs || '____') +
+          '，因为我 ' + (chosenDir.why || '____') + '。');
+      }
+    } else {
+      lines.push('（还没有选定方向）');
+    }
+    lines.push('');
+    lines.push('五、验证计划');
+    lines.push('行动：' + (plan.action || '待定'));
+    lines.push('周期：' + (plan.days || '待定'));
+    lines.push('继续线：' + (plan.go || '待定'));
+    lines.push('放弃线：' + (plan.stop || '待定'));
+
+    var text = lines.join('\n');
+
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        alert('已复制，可粘贴到备忘录或发给合伙人。');
+      }).catch(function(){
+        alert('复制失败，请手动选中结论区复制。');
+      });
+    } else {
+      alert('当前浏览器不支持自动复制，请手动选中结论区复制。');
+    }
+  });
+
+  /* ---------- 启动 ---------- */
+  restore();
+  renderOpportunities();
+  renderDirections();
+  refresh();
+})();
+</script>
+
+</body></html>
